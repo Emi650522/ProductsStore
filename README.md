@@ -16,8 +16,8 @@ Services
 Models
 Routes
 
-[Correr la Api]
-git clone [(https://github.com/Emi650522/ProductsStore.git)]
+Correr la Api
+git clone (https://github.com/Emi650522/ProductsStore.git)
 cd ProductsStore
 
 npm install
