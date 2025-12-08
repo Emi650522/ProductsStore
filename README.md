@@ -16,13 +16,18 @@ Services
 Models
 Routes
 
-Correr la Api
+# Clonar repositorio
 git clone (https://github.com/Emi650522/ProductsStore.git)
 cd ProductsStore
 
+# Instalar dependencias
 npm install
 
+# Levantar el servidor
 npm start
+
+# La api correra en 
+http://localhost:3001
 
 Si necesitás soporte o querés extender la API, contactame
 
@@ -59,7 +64,7 @@ npm install
 npm start
 
 # The api will run on
-http://localhost:3000
+http://localhost:3001
 
 Contact
 
