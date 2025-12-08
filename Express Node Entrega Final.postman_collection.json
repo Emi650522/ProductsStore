@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "ecf73d27-ab30-4cc3-8c3f-f36561739c95",
+		"name": "Express Node Entrega Final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "23306564",
+		"_collection_link": "https://qd2222-1811.postman.co/workspace/QD-Workspace~4ea072bd-5bc7-477f-8593-7ca1a5aa46d2/collection/23306564-ecf73d27-ab30-4cc3-8c3f-f36561739c95?action=share&source=collection_link&creator=23306564"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"test@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{localhost3001}}api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaWF0IjoxNzY1MjI2NzM3LCJleHAiOjE3NjUyMzAzMzd9.tEXR8RwjpzrpTsqFEd9soEsVrx2BapdN--K5maB74fw"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"test@gmail.com\",\r\n    \"password\":\"123456\"\r\n}"
+				},
+				"url": "{{localhost3001}}api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "createProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"61\",\r\n    \"nombre\": \"Smartwatch Xiaomi 164dgf\",\r\n    \"categoria\": \"Electronica\",\r\n    \"precio\": 230000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{localhost3001}}api/products/create"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProduct",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getProductById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{localhost3001}}api/products/45"
+			},
+			"response": []
+		}
+	]
+}
