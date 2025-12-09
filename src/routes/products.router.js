@@ -8,9 +8,9 @@ import {
 import { authentication } from '../middlewares/authentication.js'
 const routes = expres.Router()
 
-routes.get('/products', authentication, getAllProductsController)
+routes.get('/products', getAllProductsController)
 routes.get('/products/:id', getProductByIdController)
-routes.delete('/products/:id', deleteProductByIdController)
-routes.post('/products/create', addProduct)
+routes.delete('/products/:id', authentication, deleteProductByIdController)
+routes.post('/products/create', authentication, addProduct)
 
 export default routes
